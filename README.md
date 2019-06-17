@@ -15,12 +15,19 @@ _Ambiente requerido_
 ### Instalación 🔧
 
 1. Clonar el repositorio en el folder del servidor web en uso, **este folder debe terner permisos para que php se pueda ejecutar por CLI y permisos de lectura y escritura para el archivo .env**.
+
 `git clone https://github.com/jovel882/zinobetest.git`
+
 1. Instalar paquetes.
+
 `composer install`
+
 1. Crear BD con COLLATE 'utf8mb4_general_ci', ejemplo.
+
 `CREATE DATABASE users /*!40100 COLLATE 'utf8mb4_general_ci' */`
+
 1. Configurar variables de entorno y migrar BD, cambie los datos deacuerdo a lo configurado previamente.
+
 `php config.php ENV="production" DDBB_HOST="localhost" DDBB_USER="root" DDBB_PASSWORD="" DDBB="users"`
 
 ### **Uso comando config.php :**

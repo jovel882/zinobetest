@@ -3,6 +3,11 @@
     $varsSearch=array("ENV=","DDBB_HOST=","DDBB_USER=","DDBB_PASSWORD=","DDBB=");
     $varsInsert=[];
     $bool_dbMigrate=true;
+    $carpeta = 'cache';
+    if (!file_exists($carpeta)) {
+        mkdir($carpeta, 0777, true);
+        echo "\e[0;32;40mSe creo la carpeta de cache correctamente.\e[0m\n\n";
+    }        
     foreach($argv as $arg){
         foreach($varsSearch as $var){
             if(strpos($arg, $var) !== false) {
