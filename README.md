@@ -10,7 +10,7 @@ _Ambiente requerido_
 - Apache 2.4.29 con mod_rewrite habilitado.
 - Php 7.2.0 con phpCli habilitado para la ejecucion de comando.
 - Mysql 5.7.19.
-- Composer
+- Composer 
 
 ### Instalación 🔧
 
